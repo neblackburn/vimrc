@@ -1,28 +1,28 @@
-" set background=dark
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'msanders/snipmate.vim'
+Bundle 'rstacruz/sparkup'
+Bundle 'tpope/vim-surround'
 
 set tabstop=4
 set shiftwidth=4
-
 set incsearch
 set hlsearch
-
 set expandtab
-
 set cindent
-"set smartindent
-
 set scrolljump=5
 set scrolloff=3
-
 set nowrap
-
 set backspace=start,eol
-
-noremap <C-B> :!php -l %<CR>
-
 set swapfile
 set dir=~/tmp
 set backupdir=~/tmp
+
+noremap <C-B> :!php -l %<CR>
 
 function InsertTabWrapper()
     let col = col('.') - 1
@@ -42,3 +42,5 @@ let g:dbgPavimPort = 9009
 let g:dbgPavimBreakAtEntry = 1
 
 cabbr <expr> %% expand('%:p:h')
+
+filetype plugin indent on

@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 Bundle 'msanders/snipmate.vim'
 Bundle 'rstacruz/sparkup'
 Bundle 'tpope/vim-surround'
+Bundle 'joonty/vdebug.git'
 
 set tabstop=4
 set shiftwidth=4
